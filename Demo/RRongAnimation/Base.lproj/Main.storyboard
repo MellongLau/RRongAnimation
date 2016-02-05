@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="-661" y="421"/>
         </scene>
-        <!--Bar Animation-->
+        <!--Wave Animation-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Bar Animation" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController title="Wave Animation" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="176" y="775"/>
         </scene>
-        <!--Wave Animation-->
+        <!--Bar Animation-->
         <scene sceneID="uTC-LU-hqH">
             <objects>
-                <viewController title="Wave Animation" id="W08-Mc-Am5" sceneMemberID="viewController">
+                <viewController title="Bar Animation" id="W08-Mc-Am5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0ij-sS-lxn"/>
                         <viewControllerLayoutGuide type="bottom" id="BQC-bu-Uh6"/>
