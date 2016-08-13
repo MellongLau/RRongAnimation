@@ -15,6 +15,7 @@
 		24C9785C1C61BD1C0096FA50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C9785A1C61BD1C0096FA50 /* Main.storyboard */; };
 		24C9785E1C61BD1C0096FA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C9785D1C61BD1C0096FA50 /* Assets.xcassets */; };
 		24C978611C61BD1C0096FA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C9785F1C61BD1C0096FA50 /* LaunchScreen.storyboard */; };
+		FD1210491D5F5814008C4076 /* RRCircleAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1210481D5F5814008C4076 /* RRCircleAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		24C9785D1C61BD1C0096FA50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C978601C61BD1C0096FA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24C978621C61BD1C0096FA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD1210471D5F5814008C4076 /* RRCircleAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRCircleAnimationView.h; sourceTree = "<group>"; };
+		FD1210481D5F5814008C4076 /* RRCircleAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCircleAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 				248277871C645D990011603D /* RRCircleView.m */,
 				248277881C645D990011603D /* RRWaveAnimationView.h */,
 				248277891C645D990011603D /* RRWaveAnimationView.m */,
+				FD1210471D5F5814008C4076 /* RRCircleAnimationView.h */,
+				FD1210481D5F5814008C4076 /* RRCircleAnimationView.m */,
 			);
 			name = RRongAnimation;
 			path = ../../RRongAnimation;
@@ -171,6 +176,7 @@
 				2482778C1C645D990011603D /* RRWaveAnimationView.m in Sources */,
 				24C978561C61BD1C0096FA50 /* AppDelegate.m in Sources */,
 				24C978531C61BD1C0096FA50 /* main.m in Sources */,
+				FD1210491D5F5814008C4076 /* RRCircleAnimationView.m in Sources */,
 				2482778B1C645D990011603D /* RRCircleView.m in Sources */,
 				2482778A1C645D990011603D /* RRBarAnimationView.m in Sources */,
 			);
