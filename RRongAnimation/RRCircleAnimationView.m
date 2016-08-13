@@ -40,7 +40,7 @@
 {
     CGFloat result = sqrt(pow(_endPoint.x-_beginPoint.x, 2)+pow(_endPoint.y-_beginPoint.y, 2));
     if (_isTouchEnd) {
-        CGFloat animationDuration = 2.5;
+        CGFloat animationDuration = 1.0;
         int maxFrames = animationDuration / _displayLink.duration;
         _currentFrame++;
         
