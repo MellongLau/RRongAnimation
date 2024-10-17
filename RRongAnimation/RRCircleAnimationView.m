@@ -22,11 +22,10 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     _shapeLayer = [CAShapeLayer layer];
     [self.layer addSublayer:_shapeLayer];
     _shapeLayer.fillColor = [UIColor colorWithRed:0.400 green:0.400 blue:1.000 alpha:1.000].CGColor;
-    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];
-    [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 }
 
 - (void)updateFrame {
@@ -84,6 +83,18 @@
     CGFloat tension = 0.3;
     
     return pow(2, -10 * x) * sin((x - tension / 4) * (2 * M_PI) / tension);
+}
+
+- (void)startAnimation
+{
+    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];
+    [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+}
+
+- (void)stopAnimation
+{
+    [_displayLink invalidate];
+    _displayLink = nil;
 }
 
 @end

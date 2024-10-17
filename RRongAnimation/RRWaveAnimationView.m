@@ -12,6 +12,7 @@
 @interface RRWaveAnimationView ()
 
 @property (nonatomic, assign) NSInteger numberOfItem;
+@property (nonatomic, assign) bool isAnimating;
 
 @end
 
@@ -39,7 +40,6 @@
     _numberOfItem = 10;
     _circleColor = [UIColor colorWithRed:1.000 green:0.647 blue:0.137 alpha:1.000];
     [self createItems];
-    [self startAnimation];
 }
 
 - (void)setTintColor:(UIColor *)tintColor
@@ -52,13 +52,21 @@
 
 - (void)startAnimation
 {
+    _isAnimating = YES;
     for (int i = 0; i < self.subviews.count; i++) {
         [self animationWithItemIndex:i];
     }
 }
 
-- (void)animationWithItemIndex:(NSInteger)index {
+- (void)stopAnimation
+{
+    _isAnimating = NO;
+}
 
+- (void)animationWithItemIndex:(NSInteger)index {
+    if (!_isAnimating) {
+        return;
+    }
     __block CGRect frame = self.subviews[index].frame;
     NSInteger randomDuration = arc4random() % 40+10;
     NSInteger randomDelay = arc4random() % 40+20;

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RRAnimationProtocol.h"
 
 IB_DESIGNABLE
-@interface RRWaveAnimationView : UIView
+@interface RRWaveAnimationView : UIView <RRAnimationProtocol>
 
 @property (nonatomic, strong) IBInspectable UIColor *circleColor;
 

@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RRAnimationProtocol.h"
 
-@interface RRCircleAnimationView : UIView
+@interface RRCircleAnimationView : UIView <RRAnimationProtocol>
 
 @end

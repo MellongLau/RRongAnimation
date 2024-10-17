@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RRAnimationProtocol.h"
 
 IB_DESIGNABLE
-@interface RRBarAnimationView : UIView
+@interface RRBarAnimationView : UIView <RRAnimationProtocol>
 
 @property (nonatomic, strong) IBInspectable UIColor *tintColor;
 
